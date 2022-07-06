@@ -1,0 +1,61 @@
+@use 'global' as *;//esto es una importacion de archivos  
+.blog {
+  background-color: $blanco;
+  max-width: unset;
+  padding: 5% 10%;
+
+  .title {
+    @extend %fuentebase;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 36px;
+
+    .process {
+      margin-bottom: 25px;
+
+      & > div {  // &>div todos  &= .process>div  modificar esto para ver que onda 
+        & > h3 {
+          color: $variablecolor2;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        & > p {
+          color: $variablecolor2;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+  .card-body
+  {
+    .category
+    {
+      color: $vc;
+    }
+
+
+  }
+}
+  

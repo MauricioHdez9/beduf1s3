@@ -1,0 +1,84 @@
+@charset "UTF-8";
+h1
+{
+  padding: 10px;
+  margin: 10px;
+}
+.contenedor-animacion {
+  text-align: center;
+}
+
+.imagen-columnas {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.columnas-animacion > h3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: width 2s, height 2s, transform 2s;
+  transition: all 3s;
+}
+.columnas-animacion > h3:hover {
+  color: #67b54b;
+  transform:scale(1,0.5)
+  
+  
+}
+.columnas-animacion > p {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imgflecha
+{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+.conimgflecha
+{
+  display: flex;
+  justify-content: center;
+  animation: mymove 5s infinite;
+  animation: mxmove 5s infinite;
+  position: relative;
+
+}
+@keyframes mymove {
+  0%   {top: 0px; }
+  25%  {top:-50px;}
+  75%  {top: 50px;}
+  100% {top: 0px; }
+}
+@keyframes mxmove
+{
+  0%   {left: 0px;}
+  25%  {left: -500px;}
+  75%  {right: -500px;}
+  100% {right: 0px;}
+
+}
+
+/*# sourceMappingURL=aboutUs.css.map */
+/*codigo de estos cuates*/
+.feature__title__anchor {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 24px;
+}
+.feature__title__anchor .feature__title {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 35px;
+  text-decoration: none;
+  text-shadow: #025157 1px 1px 2px;
+  transition: color 0.3s ease-in-out;
+  /* Agrega este selector para activar la transición en el evento :hover */
+}
+.feature__title__anchor .feature__title:hover {
+  color: #67b54b;
+}

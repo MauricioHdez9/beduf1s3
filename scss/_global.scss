@@ -1,0 +1,14 @@
+// gloval.scss
+//colores 
+$variablecolor:rgb(6, 255, 6);
+$variablecolor2:#948765;
+$blanco:#fff;
+$vc:#67b54b;
+//fuentes 
+$fuente:"Alegreya",serfi;
+// _catidaddeprosesos = 6; //variable interna 
+%fuentebase
+{
+    front-familiy:$fuente;
+    color:#948765
+}

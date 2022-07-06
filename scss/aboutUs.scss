@@ -1,0 +1,50 @@
+.contenedor-animacion
+{
+    text-align: center;
+  
+}
+.imagen-columnas
+{
+    width: 100%;
+    padding-bottom: 10px;
+    
+}
+.columnas-animacion
+{
+    &>h3
+    {
+        padding: 10px;
+        margin-bottom: 20px;
+        &:hover {
+            color:#67b54b;
+          }
+    }
+    &>p
+    {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+}
+.feature__title__anchor {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 24px;
+  
+    .feature__title {
+      margin-top: 50px;
+      font-weight: 500;
+      font-size: 24px;
+      font-family: 'Open Sans',sans-serif;
+      margin-bottom: 35px;
+      text-decoration: none;
+      text-shadow: #025157 1px 1px 2px;
+      transition: color .3s ease-in-out;
+  
+        /* Agrega este selector para activar la transición en el evento :hover */
+      &:hover {
+        color:#67b54b;
+      }
+    }
+  }
